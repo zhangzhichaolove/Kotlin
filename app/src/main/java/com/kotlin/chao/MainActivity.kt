@@ -1,5 +1,6 @@
 package com.kotlin.chao
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btn_kotlin_test.setText("控件ID测试")
         btn_kotlin_test.setOnClickListener { toast("你点击了按钮!") }
-        btn_kotlin_test.setOnClickListener { v: View -> toast("这个控件是：" + (v is LinearLayout)) }
+        btn_kotlin_test.setOnClickListener { v: View -> toast("这个控件是LinearLayout吗？" + (v is LinearLayout)) }
+        btn_list_test.setOnClickListener({ v: View -> startActivity(Intent(MainActivity@ this, ListActivity::class.java)) })
     }
 
     fun toast(msg: String) {

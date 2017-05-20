@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import com.kotlin.chao.R
+import com.kotlin.chao.util.toast
 
 public class RecyclerAdapter(val datas: MutableList<String>?) : RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder>() {
 
@@ -29,7 +29,7 @@ public class RecyclerAdapter(val datas: MutableList<String>?) : RecyclerView.Ada
 
         init {
             mTextView = itemView.findViewById(R.id.mTextView) as TextView
-            itemView.setOnClickListener({ v -> Toast.makeText(itemView.context, mTextView.text, Toast.LENGTH_SHORT).show() })
+            itemView.setOnClickListener({ v -> toast(mTextView.text) })
         }
     }
 

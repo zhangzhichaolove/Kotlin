@@ -6,15 +6,18 @@ import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.kotlin.chao.adapter.RecyclerAdapter
+import com.kotlin.chao.util.Preference
+import com.kotlin.chao.util.toast
 import kotlinx.android.synthetic.main.activity_list.*
 
 /**
  * Created by Chao on 2017/5/20.
  */
 public class ListActivity : AppCompatActivity() {
-
+    //Kotlin的空安全设计，主要是在类型后面加？表示可空，否则就不能为null。
     private var mRecyclerView: RecyclerView? = null
     private var datas: MutableList<String>? = null
+    var aInt: Int by Preference(this, "aInt", 0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +35,8 @@ public class ListActivity : AppCompatActivity() {
         mRecyclerView!!.setLayoutManager(LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false))
         var adapter: RecyclerAdapter = RecyclerAdapter(datas)
         mRecyclerView!!.setAdapter(adapter)
+
+        whatever()
     }
 
     public fun getData(): Unit {
@@ -39,6 +44,11 @@ public class ListActivity : AppCompatActivity() {
         for (i in 1..100) {
             datas!!.add("这是模拟数据" + i.toString())
         }
+    }
+
+    fun whatever() {
+        toast(aInt)//会从SharedPreference取这个数据
+        aInt = 9 //会将这个数据写入SharedPreference
     }
 
 }

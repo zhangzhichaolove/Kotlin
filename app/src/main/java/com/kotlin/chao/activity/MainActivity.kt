@@ -1,4 +1,4 @@
-package com.kotlin.chao
+package com.kotlin.chao.activity
 
 import android.content.Intent
 import android.graphics.Color
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.kotlin.chao.App
+import com.kotlin.chao.R
 import com.kotlin.chao.activity.GrammarActivity
 import com.kotlin.chao.activity.OtherActivity
 import com.kotlin.chao.java.JavaClass

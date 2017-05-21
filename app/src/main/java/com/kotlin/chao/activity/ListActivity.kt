@@ -1,10 +1,11 @@
-package com.kotlin.chao
+package com.kotlin.chao.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import com.kotlin.chao.R
 import com.kotlin.chao.adapter.RecyclerAdapter
 import com.kotlin.chao.util.Preference
 import com.kotlin.chao.util.ToastUtil.toast

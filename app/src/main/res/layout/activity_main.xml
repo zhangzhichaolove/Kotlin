@@ -20,4 +20,12 @@
     <Button android:layout_width="match_parent" android:layout_height="wrap_content"
             android:text="列表测试"
             android:id="@+id/btn_list_test"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="语法展示"
+            android:id="@+id/btn_grammar"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="扩展语法"
+            android:id="@+id/btn_other"/>
 </LinearLayout>

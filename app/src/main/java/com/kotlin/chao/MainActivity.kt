@@ -7,10 +7,12 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.kotlin.chao.activity.GrammarActivity
+import com.kotlin.chao.activity.OtherActivity
 import com.kotlin.chao.java.JavaClass
+import com.kotlin.chao.util.ToastUtil.toast
 import com.kotlin.chao.util.ctx
 import com.kotlin.chao.util.e
-import com.kotlin.chao.util.toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -70,6 +72,9 @@ class MainActivity : AppCompatActivity() {
 
         e(App.instance)
         e(btn_kotlin_id.ctx)
+
+        btn_grammar.setOnClickListener({ v -> startActivity(Intent(MainActivity@ this, GrammarActivity::class.java)) })
+        btn_other.setOnClickListener({ v -> startActivity(Intent(MainActivity@ this, OtherActivity::class.java)) })
 
     }
 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_grammar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.kotlin.chao.activity.GrammarActivity">
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_noneBack"
+                android:text="无返回函数"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_Back"
+                android:text="有返回函数"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_string"
+                android:text="字符操作"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_else"
+                android:text="条件表达式"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_null"
+                android:text="非空表达"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_for"
+                android:text="For循环"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_while"
+                android:text="while循环"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_when"
+                android:text=" when 表达式"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_range"
+                android:text="使用区间（range）"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_step"
+                android:text="数列迭代"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_in"
+                android:text="in 运算符"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_if_lambda"
+                android:text="lambda"/>
+
+    </LinearLayout>
+</ScrollView>

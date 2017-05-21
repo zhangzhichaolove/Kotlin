@@ -1,6 +1,7 @@
 package com.kotlin.chao.util
 
 import android.content.Context
+import com.kotlin.chao.App
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
@@ -8,9 +9,9 @@ import kotlin.reflect.KProperty
  * SharedPreferences 工具类
  * Created by Chao on 2017/5/20.
  */
-class Preference<T>(val context: Context, val name: String, val default: T) : ReadWriteProperty<Any?, T> {
+class Preference<T>(val name: String, val default: T) : ReadWriteProperty<Any?, T> {
 
-    val prefs by lazy { context.getSharedPreferences("default", Context.MODE_PRIVATE) }
+    val prefs by lazy { App.instance.getSharedPreferences("default", Context.MODE_PRIVATE) }
 
     override fun getValue(thisRef: Any?, property: KProperty<*>): T {
         return findPreference(name, default)

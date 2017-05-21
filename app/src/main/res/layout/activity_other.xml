@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_other"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.kotlin.chao.activity.OtherActivity">
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_default"
+            android:text="函数的默认参数"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_list"
+            android:text="过滤 list"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_string"
+            android:text="String 内插"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_map"
+            android:text="遍历Map"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_lazy"
+            android:text="延迟属性"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_add"
+            android:text="扩展函数"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_inst"
+            android:text="创建单例"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/btn_Ifnotnull"
+            android:text="If not null"/>
+
+</LinearLayout>

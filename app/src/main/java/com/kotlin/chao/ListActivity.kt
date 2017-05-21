@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.kotlin.chao.adapter.RecyclerAdapter
 import com.kotlin.chao.util.Preference
-import com.kotlin.chao.util.toast
+import com.kotlin.chao.util.ToastUtil.toast
 import kotlinx.android.synthetic.main.activity_list.*
 
 /**
@@ -17,7 +17,7 @@ public class ListActivity : AppCompatActivity() {
     //Kotlin的空安全设计，主要是在类型后面加？表示可空，否则就不能为null。
     private var mRecyclerView: RecyclerView? = null
     private var datas: MutableList<String>? = null
-    var aInt: Int by Preference(this, "aInt", 0)
+    var aInt: Int by Preference("aInt", 0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

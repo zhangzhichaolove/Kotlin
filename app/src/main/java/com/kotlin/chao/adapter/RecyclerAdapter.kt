@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.kotlin.chao.R
-import com.kotlin.chao.util.toast
+import com.kotlin.chao.util.ToastUtil.toast
 
 public class RecyclerAdapter(val datas: MutableList<String>?) : RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder>() {
 

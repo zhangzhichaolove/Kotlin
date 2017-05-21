@@ -9,8 +9,6 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.kotlin.chao.App
 import com.kotlin.chao.R
-import com.kotlin.chao.activity.GrammarActivity
-import com.kotlin.chao.activity.OtherActivity
 import com.kotlin.chao.java.JavaClass
 import com.kotlin.chao.util.ToastUtil.toast
 import com.kotlin.chao.util.ctx
